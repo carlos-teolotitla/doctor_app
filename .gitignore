@@ -1,0 +1,28 @@
+drwxr-xr-x  2 cteolotitla  CORP\Domain Users   68 Oct  2 16:45 .
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# vagrant temp files
+.vagrant
+
+# OS X files
+.DS_Store
+
+# eclipse files
+**/.project
+**/.settings
+**/.classpath
+
+# output files from code
+cmis-util/src/test/resources/com/cengage/cmis/util/files/*
+
+# gedit backups
+*~
+
+# maven build directories
+**/target
+/target
