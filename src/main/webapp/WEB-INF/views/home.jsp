@@ -55,31 +55,7 @@
             <!-- END Preloader -->
         <!-- Page Container -->
         <!-- In the PHP version you can set the following options from inc/config file -->
-        <!--
-        Available #page-container classes:
-
-        '' (None)                                       for a full main and alternative sidebar hidden by default (> 991px)
-
-        'sidebar-visible-lg'                            for a full main sidebar visible by default (> 991px)
-        'sidebar-partial'                               for a partial main sidebar which opens on mouse hover, hidden by default (> 991px)
-        'sidebar-partial sidebar-visible-lg'            for a partial main sidebar which opens on mouse hover, visible by default (> 991px)
-
-        'sidebar-alt-visible-lg'                        for a full alternative sidebar visible by default (> 991px)
-        'sidebar-alt-partial'                           for a partial alternative sidebar which opens on mouse hover, hidden by default (> 991px)
-        'sidebar-alt-partial sidebar-alt-visible-lg'    for a partial alternative sidebar which opens on mouse hover, visible by default (> 991px)
-
-        'sidebar-partial sidebar-alt-partial'           for both sidebars partial which open on mouse hover, hidden by default (> 991px)
-
-        'sidebar-no-animations'                         add this as extra for disabling sidebar animations on large screens (> 991px) - Better performance with heavy pages!
-
-        'style-alt'                                     for an alternative main style (without it: the default style)
-        'footer-fixed'                                  for a fixed footer (without it: a static footer)
-
-        'disable-menu-autoscroll'                       add this to disable the main menu auto scrolling when opening a submenu
-
-        'header-fixed-top'                              has to be added only if the class 'navbar-fixed-top' was added on header.navbar
-        'header-fixed-bottom'                           has to be added only if the class 'navbar-fixed-bottom' was added on header.navbar
-        -->
+      
         <div id="page-container" class="sidebar-partial sidebar-visible-lg sidebar-no-animations">
             <!-- Alternative Sidebar -->
             <div id="sidebar-alt">
@@ -89,27 +65,39 @@
 
             <!-- Main Sidebar -->
             <div id="sidebar">
-                Main Sidebar Content
-            </div>
+				<div class="sidebar-content">
+					<a href="index.html" class="sidebar-brand"> <i class="gi gi-hospital"></i><strong>C.</strong>M.
+					</a>
+				</div>
+				
+					
+					<!-- User Info -->
+                      <div class="sidebar-section sidebar-user clearfix">
+                          <div class="sidebar-user-avatar">
+                              <a href="page_ready_user_profile.html">
+                                  <img src="<c:url value='/resources/img/placeholders/avatars/avatar2.jpg'/>" alt="avatar"/>
+                              </a>
+                          </div>
+                          <div class="sidebar-user-name" style="color: #FFFFFF">Ra&uacute;l T.</div>
+                          <div class="sidebar-user-links">
+                              <a href="page_ready_user_profile.html" data-toggle="tooltip" data-placement="bottom" title="Profile"><i class="gi gi-user"></i></a>
+                              <a href="page_ready_inbox.html" data-toggle="tooltip" data-placement="bottom" title="Messages"><i class="gi gi-envelope"></i></a>
+                              <!-- Opens the user settings modal that can be found at the bottom of each page (page_footer.html in PHP version) -->
+                              <a href="#modal-user-settings" data-toggle="modal" class="enable-tooltip" data-placement="bottom" title="Settings"><i class="gi gi-cogwheel"></i></a>
+                              <a href="login.html" data-toggle="tooltip" data-placement="bottom" title="Logout"><i class="gi gi-exit"></i></a>
+                          </div>
+                      </div>
+				
+				<!-- MENU -->
+				<ul class="sidebar-nav">
+					<li><a href="/medico/home"><i class="hi hi-home sidebar-nav-icon"></i>Inicio</a></li>
+				</ul>
+			</div>
             <!-- END Main Sidebar -->
 
             <!-- Main Container -->
             <div id="main-container">
-                <!-- Header -->
-                <!-- In the PHP version you can set the following options from inc/config file -->
-                <!--
-                Available header.navbar classes:
-
-                'navbar-default'            for the default light header
-                'navbar-inverse'            for an alternative dark header
-
-                'navbar-fixed-top'          for a top fixed header (fixed sidebars with scroll will be auto initialized, functionality can be found in js/app.js - handleSidebar())
-                    'header-fixed-top'      has to be added on #page-container only if the class 'navbar-fixed-top' was added
-
-                'navbar-fixed-bottom'       for a bottom fixed header (fixed sidebars with scroll will be auto initialized, functionality can be found in js/app.js - handleSidebar()))
-                    'header-fixed-bottom'   has to be added on #page-container only if the class 'navbar-fixed-bottom' was added
-                -->
-                <header class="navbar navbar-default">
+                           <header class="navbar navbar-default">
                     Header Content
                 </header>
                 <!-- END Header -->
@@ -124,7 +112,7 @@
                                 <a href="page_ready_user_profile.html" class="pull-right">
                                     <img src="<c:url value='/resources/img/placeholders/avatars/avatar10.jpg'/>" alt="Avatar" class="img-circle"/>
                                 </a>
-                                <h1>Consultorio M&eacute;dico<br><small>Bienvenidos!</small></h1>
+                                <h1>Consultorio M&eacute;dico<br><small>Bienvenido!</small></h1>
                             </div>
                             <!-- For best results use an image with a resolution of 2560x248 pixels (You can also use a blurred image with ratio 10:1 - eg: 1000x100 pixels - it will adjust and look great!) -->
                             <img src="<c:url value='/resources/img/placeholders/headers/article_header.jpg'/>" alt="header image" class="animation-pulseSlow"/>
