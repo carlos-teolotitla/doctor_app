@@ -119,30 +119,202 @@
                         </div>
                         <!-- END Article Header -->
 
-                        <!-- Article Content -->
-                        <div class="row">
-                            <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                                <!-- Article Block -->
-                                <div class="block block-alt-noborder">
-                                    <!-- Article Content -->
-                                    <article>
-                                        <h3 class="sub-header text-center">by <a href="page_ready_user_profile.html"><strong>Explorer</strong></a> on <strong>January 20, 2014</strong></h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices, justo vel imperdiet gravida, urna ligula hendrerit nibh, ac cursus nibh sapien in purus. Mauris tincidunt tincidunt turpis in porta. Integer fermentum tincidunt auctor. Vestibulum ullamcorper, odio sed rhoncus imperdiet, enim elit sollicitudin orci, eget dictum leo mi nec lectus. Nam commodo turpis id lectus scelerisque vulputate. Integer sed dolor erat. Fusce erat ipsum, varius vel euismod sed, tristique et lectus? Etiam egestas fringilla enim, id convallis lectus laoreet at. Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id lectus facilisis scelerisque?</p>
-                                        
-                                        <p>Proin rhoncus dui at ligula vestibulum ut facilisis ante sodales! Suspendisse potenti. Aliquam tincidunt sollicitudin sem nec ultrices. Sed at mi velit. Ut egestas tempor est, in cursus enim venenatis eget! Nulla quis ligula ipsum. Donec vitae ultrices dolor? Donec lacinia venenatis metus at bibendum? In hac habitasse platea dictumst. Proin ac nibh rutrum lectus rhoncus eleifend. Sed porttitor pretium venenatis. Suspendisse potenti. Aliquam quis ligula elit. Aliquam at orci ac neque semper dictum. Sed tincidunt scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti. Pellentesque non accumsan orci. Praesent at lacinia dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <blockquote>
-                                            <p>It was the ultimate trip! The view at the top was breathtaking!</p>
-                                            <footer>Explorer</footer>
-                                        </blockquote>
-                                       
-                                    </article>
-                                    <!-- END Article Content -->
-                                </div>
-                                <!-- END Article Block -->
-                            </div>
-                        </div>
+                        
+                        
                         <!-- END Article Content -->
                     </div>
+                    <!-- Horizontal Form Block -->
+                                <div class="block">
+                                    <!-- Horizontal Form Title -->
+                                    <div class="block-title">
+                                        <div class="block-options pull-right">
+                                            <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default toggle-bordered enable-tooltip" data-toggle="button" title="Toggles .form-bordered class">No Borders</a>
+                                        </div>
+                                        <h2><strong>Horizontal</strong> Form</h2>
+                                    </div>
+                                    <!-- END Horizontal Form Title -->
+
+                                    <!-- Horizontal Form Content -->
+                                    <form action="page_forms_general.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label" for="example-hf-email">Email</label>
+                                            <div class="col-md-9">
+                                                 <div class="input-group">
+                                                        <input type="text" id="val_username" name="val_username" class="form-control" placeholder="Your username..">
+                                                        <span class="input-group-addon"><i class="gi gi-wifi"></i></span>
+                                                    </div>
+
+
+                                                <span class="help-block">Pon tu correo</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group form-actions">
+                                            <div class="col-md-9 col-md-offset-3">
+                                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-user"></i> Login</button>
+                                                <button type="reset" class="btn btn-sm btn-warning"><i class="fa fa-repeat"></i> Reset</button>
+                                            </div>
+                                        </div>
+                                        <!-- Table Styles Header -->
+                        <div class="content-header">
+                            <div class="header-section">
+                                <h1>
+                                    <i class="gi gi-table"></i>Tablas<br><small>Visualizacion</small>
+                                </h1>
+                            </div>
+                        </div>
+                        <ul class="breadcrumb breadcrumb-top">
+                            <li>Tablas</li>
+                            <li><a href="">General</a></li>
+                        </ul>
+                        <!-- END Table Styles Header -->
+
+                        <!-- Table Styles Block -->
+                        <div class="block">
+                            <!-- Table Styles Title -->
+                            <div class="block-title">
+                                <h2><strong>Mi Tabla</strong> de Formularios</h2>
+                            </div>
+                            <!-- END Table Styles Title -->
+
+                            <!-- Table Styles Content -->
+                            <!-- Changing classes functionality initialized in js/pages/tablesGeneral.js -->
+                            <div class="table-options clearfix">
+                                <div class="btn-group btn-group-sm pull-right">
+                                    <a href="javascript:void(0)" class="btn btn-primary active" id="style-striped" data-toggle="tooltip" title=".table-striped">Striped</a>
+                                    <a href="javascript:void(0)" class="btn btn-primary" id="style-condensed" data-toggle="tooltip" title=".table-condensed">Condensed</a>
+                                    <a href="javascript:void(0)" class="btn btn-primary" id="style-hover" data-toggle="tooltip" title=".table-hover">Hover</a>
+                                </div>
+                                <div class="btn-group btn-group-sm pull-left" data-toggle="buttons">
+                                    <label id="style-default" class="btn btn-primary active" data-toggle="tooltip" title=".table">
+                                        <input type="radio" name="style-options"> Por Defecto
+                                    </label>
+                                    <label id="style-bordered" class="btn btn-primary" data-toggle="tooltip" title=".table-bordered">
+                                        <input type="radio" name="style-options"> Limitado
+                                    </label>
+                                    <label id="style-borderless" class="btn btn-primary" data-toggle="tooltip" title=".table-borderless">
+                                        <input type="radio" name="style-options"> Sin Limites
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <!--
+                                Available Table Classes:
+                                    'table'             - basic table
+                                    'table-bordered'    - table with full borders
+                                    'table-borderless'  - table with no borders
+                                    'table-striped'     - striped table
+                                    'table-condensed'   - table with smaller top and bottom cell padding
+                                    'table-hover'       - rows highlighted on mouse hover
+                                    'table-vcenter'     - middle align content vertically
+                                -->
+                                <table id="general-table" class="table table-striped table-vcenter">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 80px;" class="text-center"><input type="checkbox"></th>
+                                            <th style="width: 150px;" class="text-center"><i class="gi gi-user"></i></th>
+                                            <th>Cliente</th>
+                                            <th>Correo</th>
+                                            <th>Status</th>
+                                            <th style="width: 150px;" class="text-center">Actiones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center"><input type="checkbox" id="checkbox1-1" name="checkbox1-1"></td>
+                                            <td class="text-center"><img src='<c:url value="/resources/img/general/homerr.gif"/>' alt="avatar" class="img-circle"></td>
+                                            <td><a href="page_ready_user_profile.html">Homer</a></td>
+                                            <td>Homer@example.com</td>
+                                            <td><a href="javascript:void(0)" class="label label-warning">Basica</a></td>
+                                            <td class="text-center">
+                                                <div class="btn-group btn-group-xs">
+                                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
+                                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-danger"><i class="fa fa-times"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><input type="checkbox" id="checkbox1-2" name="checkbox1-2"></td>
+                                            <td class="text-center"><img src="img/placeholders/avatars/avatar9.jpg" alt="avatar" class="img-circle"></td>
+                                            <td><a href="page_ready_user_profile.html">client2</a></td>
+                                            <td>client2@example.com</td>
+                                            <td><a href="javascript:void(0)" class="label label-success">VIP</a></td>
+                                            <td class="text-center">
+                                                <div class="btn-group btn-group-xs">
+                                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
+                                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-danger"><i class="fa fa-times"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><input type="checkbox" id="checkbox1-3" name="checkbox1-3"></td>
+                                            <td class="text-center"><img src="img/placeholders/avatars/avatar8.jpg" alt="avatar" class="img-circle"></td>
+                                            <td><a href="page_ready_user_profile.html">client3</a></td>
+                                            <td>client3@example.com</td>
+                                            <td><a href="javascript:void(0)" class="label label-info">Negocios</a></td>
+                                            <td class="text-center">
+                                                <div class="btn-group btn-group-xs">
+                                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
+                                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-danger"><i class="fa fa-times"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="6">
+                                                <div class="btn-group btn-group-sm pull-right">
+                                                    <a href="javascript:void(0)" class="btn btn-primary" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
+                                                    <div class="btn-group btn-group-sm dropup">
+                                                        <a href="javascript:void(0)" class="btn btn-primary pull-right dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                                                        <ul class="dropdown-menu dropdown-custom dropdown-menu-right">
+                                                            <li><a href="javascript:void(0)"><i class="fa fa-print pull-right"></i> Imprime</a></li>
+                                                            <li class="dropdown-header"><i class="fa fa-share pull-right"></i> Export As</li>
+                                                            <li>
+                                                                <a href="javascript:void(0)">.pdf</a>
+                                                                <a href="javascript:void(0)">.cvs</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-group btn-group-sm">
+                                                    <a href="javascript:void(0)" class="btn btn-primary" data-toggle="tooltip" title="Edit Selected"><i class="fa fa-pencil"></i></a>
+                                                    <a href="javascript:void(0)" class="btn btn-primary" data-toggle="tooltip" title="Delete Selected"><i class="fa fa-times"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <!-- END Table Styles Content -->
+                        </div>
+                        <!-- END Table Styles Block -->
+                                        
+                                    </form>
+                                    <!-- END Horizontal Form Content -->
+                                </div>
+                                <!-- END Horizontal Form Block -->
+                   <!-- With Animation and Info Carousel -->
+                            <div class="col-sm-4">
+                                <!-- With Animation and Info Carousel Block -->
+                                <div class="block">
+                                    <!-- With Animation and Info Carousel Title -->
+                                    <div class="block-title">
+                                        <h2><strong>Animation</strong> and <strong>Info</strong></h2>
+                                    </div>
+                                    <!-- END With Animation and Info Carousel Title -->
+
+                                    <!-- With Animation and Info Carousel Content -->
+                                    <div id="example-carousel" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#example-carousel" data-slide-to="0" class="active"></li>
+                                            <li data-target="#example-carousel" data-slide-to="1"></li>
+                                            <li data-target="#example-carousel" data-slide-to="2"></li>
+                                            <li data-target="#example-carousel" data-slide-to="3"></li>
+                                        </ol>
+                   
                     <!-- END Page Content -->
 
                 <!-- Footer -->
